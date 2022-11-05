@@ -25,4 +25,5 @@ urlpatterns = [
     path('hello/', base.views.hello),
     path('', base.views.HomepageView.as_view(), name = 'homepage'),
     path("cart/<int:pk>/", cart_view, name="cart_detail"),
+    path('add-to-cart/<int:pk>', views.add_to_cart_view,name='add-to-cart')
 ]
