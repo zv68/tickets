@@ -23,5 +23,6 @@ from base.views import hello
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', base.views.hello),
-
+    path('', base.views.HomepageView.as_view(), name = 'homepage'),
+    path("cart/<int:pk>/", cart_view, name="cart_detail"),
 ]
