@@ -23,7 +23,9 @@ from base.views import hello
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', base.views.hello),
+    path('aboutus', base.views.aboutus_view),
     path('', base.views.HomepageView.as_view(), name = 'homepage'),
-    path("cart/<int:pk>/", cart_view, name="cart_detail"),
-    path('add-to-cart/<int:pk>', views.add_to_cart_view,name='add-to-cart')
+    path("cart/<int:pk>/", base.views.cart_view, name="cart")
+    #path("cart/<int:pk>/", cart_view, name="cart_detail")
+    #path('add-to-cart/<int:pk>', views.add_to_cart_view,name='add-to-cart')
 ]

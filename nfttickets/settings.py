@@ -57,6 +57,7 @@ ROOT_URLCONF = 'nfttickets.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        # here down write the location of templates folder like> [ BASE_DIR / 'TEMPLATES' ],
         'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
